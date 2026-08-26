@@ -1,0 +1,17 @@
+:root {
+  --ink: #0E1116;
+  --ink-soft: #171B22;
+  --paper: #F4F5F1;
+  --paper-mid: #5B616E;
+  --paper-on-ink: #A8ACB8;
+  --signal: #4C5FFF;
+  --signal-soft: #D9DEFF;
+  --delta-before: #FF5A3C;
+  --delta-after: #16C79A;
+
+  --font-display: 'Space Grotesk', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --container: 1120px;
+}
