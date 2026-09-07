@@ -1,22 +1,22 @@
 import React from 'react';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import ProofStrip from './components/ProofStrip';
-import CaseStudies from './components/CaseStudies';
-import About from './components/About';
-import Experience from './components/Experience';
-import Footer from './components/Footer';
+import { RouterProvider, RouterOutlet } from './router';
+import HomePage from './pages/HomePage';
+import WorkPage from './pages/WorkPage';
+import CaseStudiesIndexPage from './pages/CaseStudiesIndexPage';
+import CaseStudyPage from './pages/CaseStudyPage';
+
+const routes = [
+  { path: '/', component: HomePage },
+  { path: '/work', component: WorkPage },
+  { path: '/case-studies', component: CaseStudiesIndexPage },
+  { path: '/case-studies/:slug', component: CaseStudyPage },
+  { path: '*', component: HomePage },
+];
 
 export default function App() {
   return (
-    <>
-      <Nav />
-      <Hero />
-      <ProofStrip />
-      <CaseStudies />
-      <About />
-      <Experience />
-      <Footer />
-    </>
+    <RouterProvider routes={routes}>
+      <RouterOutlet />
+    </RouterProvider>
   );
 }

@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Base is '/newportfolio/' because the custom domain isn't live yet, so
-// the site is served from the github.io/newportfolio subpath. Once
-// arisneos.com is set up as the custom domain (via the CNAME file in
-// /public), change this back to '/' — otherwise assets will 404 there.
+// Base is '/' because arisneos.com is a custom domain served from the
+// repo root (via the CNAME file in /public) — not a github.io/repo-name
+// subpath. If you ever remove the custom domain, change this to
+// '/<repo-name>/' to avoid the asset 404s the old site had.
 export default defineConfig({
   plugins: [react()],
-  base: '/newportfolio/',
+  base: '/',
 });

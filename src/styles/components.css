@@ -348,3 +348,195 @@
   .nav-links { display: none; }
   .section-title { font-size: 30px; }
 }
+
+.case-visual {
+  background: var(--paper);
+  border-radius: 10px;
+  padding: 12px 8px;
+  margin-bottom: 20px;
+}
+.case-visual-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prototypes { background: var(--ink); color: var(--paper); }
+.prototypes .section-title { color: var(--paper); }
+.gate-form { max-width: 480px; }
+.gate-copy {
+  font-size: 15px;
+  color: var(--paper-on-ink);
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+.gate-row { display: flex; gap: 12px; }
+.gate-row input {
+  flex: 1;
+  background: var(--ink-soft);
+  border: 1px solid rgba(168, 172, 184, 0.3);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: var(--paper);
+  font-size: 15px;
+  font-family: var(--font-body);
+}
+.gate-row input::placeholder { color: var(--paper-on-ink); }
+.gate-error {
+  color: var(--delta-before);
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+.gate-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 560px;
+}
+.gate-links li {
+  border-top: 1px solid rgba(168, 172, 184, 0.15);
+}
+.gate-links li:last-child { border-bottom: 1px solid rgba(168, 172, 184, 0.15); }
+.gate-links a {
+  display: block;
+  padding: 16px 4px;
+  text-decoration: none;
+  color: var(--paper);
+  font-weight: 500;
+  font-size: 15px;
+}
+.gate-links a:hover { color: var(--signal); }
+
+@media (max-width: 860px) {
+  .gate-row { flex-direction: column; }
+}
+
+.page-header { padding-bottom: 48px; }
+.page-intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--paper-mid);
+  max-width: 620px;
+  margin: 0;
+}
+.section-more {
+  margin-top: 32px;
+  display: inline-block;
+  border-color: rgba(14, 17, 22, 0.2);
+  color: var(--ink);
+}
+
+.work-full { padding-top: 0; }
+
+/* Case Studies index */
+.cs-list { padding-top: 0; }
+.cs-list-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 32px 0;
+  border-top: 1px solid rgba(14, 17, 22, 0.1);
+  text-decoration: none;
+  color: var(--ink);
+}
+.cs-list-item:last-child { border-bottom: 1px solid rgba(14, 17, 22, 0.1); }
+.cs-list-status {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--signal);
+  margin: 0 0 10px;
+}
+.cs-list-item h3 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+.cs-list-subtitle {
+  font-size: 15px;
+  color: var(--paper-mid);
+  margin: 0 0 12px;
+  font-style: italic;
+}
+.cs-list-hook {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0;
+}
+.cs-list-arrow {
+  font-size: 24px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+/* Long-form case study article */
+.cs-back {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--paper-mid);
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+.cs-article-header { padding: 64px 0 0; }
+.cs-article-header h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 48px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 16px;
+  max-width: 760px;
+}
+.cs-subtitle {
+  font-size: 20px;
+  font-style: italic;
+  color: var(--paper-mid);
+  margin: 0 0 20px;
+  max-width: 640px;
+}
+.cs-hook {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 640px;
+  margin: 0 0 48px;
+}
+.cs-body { max-width: 720px; padding-bottom: 96px; }
+.cs-premise p {
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0 0 20px;
+}
+.cs-hypothesis {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  border-left: 3px solid var(--signal);
+  padding: 4px 0 4px 24px;
+  margin: 40px 0;
+}
+.cs-section { margin-top: 48px; }
+.cs-section h2 {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
+}
+.cs-section p {
+  font-size: 17px;
+  line-height: 1.75;
+  margin: 0 0 18px;
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .cs-article-header h1 { font-size: 34px; }
+  .cs-list-item { flex-direction: column; gap: 8px; }
+}

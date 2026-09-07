@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import DeltaChip from './DeltaChip';
+import CaseVisual from './CaseVisual';
 
-export default function CaseStudyCard({ study }) {
+export default function WorkCard({ study }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -9,6 +10,7 @@ export default function CaseStudyCard({ study }) {
       <p className="case-tag">{study.tag}</p>
       <h3 className="case-title">{study.title}</h3>
       <p className="case-role">{study.company} &middot; {study.role}</p>
+      <CaseVisual kind={study.visual} />
       <p className="case-hook">{study.hook}</p>
       <div className="case-chips">
         {study.chips.map((c, i) => (

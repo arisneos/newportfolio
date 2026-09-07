@@ -1,124 +1,85 @@
 const caseStudies = [
   {
-    id: 'weatherxm',
-    tag: '01 — Flagship',
-    company: 'WeatherXM',
-    role: 'Head of Design (0\u21921 team building)',
-    title: 'From bottleneck to force multiplier',
-    hook: 'A $0-revenue MVP with no clear customer, rebuilt around real research into a $10K MRR product \u2014 while building the team and process that made it repeatable.',
-    chips: [
-      { before: '$0', after: '$10K MRR' },
-      { before: '0.1%', after: '2% conv.' },
-      { before: '1', after: '4 designers' },
-    ],
+    slug: 'from-figma-to-function',
+    status: 'In progress',
+    date: '2026',
+    title: 'From Figma to Function',
+    subtitle: "Rethinking the designer's role in AI-assisted product teams",
+    hook: 'The distance between an idea and a working implementation is shrinking. What happens to the designer\u2019s role when it does?',
+    premise: `The traditional product design process is becoming insufficient for teams building modern digital products.
+
+The familiar model \u2014 research, wireframes, high-fidelity design, handoff, implementation \u2014 assumes a relatively clear boundary between design and engineering. Designers define the experience, developers implement it, and collaboration happens mostly around constraints, feasibility, and QA.
+
+That boundary is becoming increasingly artificial.
+
+AI-assisted development, faster prototyping tools, mature frontend frameworks, design systems, and increasingly complex product ecosystems are changing what it means to design software. The distance between an idea and a working implementation is shrinking, while the cost of designers remaining detached from implementation is becoming more visible.
+
+This case study explores a different working model: one where product designers move closer to the implementation layer without necessarily becoming full-time software engineers.`,
+    hypothesis: 'Product designers who understand technical constraints, can manipulate and prototype real interfaces, and collaborate with engineering from the beginning of the process can make better product decisions, reduce handoff friction, and operate with greater autonomy.',
     sections: [
       {
-        heading: 'Context',
-        body: `I joined WeatherXM as the first design hire, reporting into the CPO. WeatherXM Pro \u2014 a subscription product layered on top of the company's crowdsourced weather station network \u2014 had already shipped a 20-day MVP under business pressure, with no research behind it. My mandate was broad and undefined: fix Pro, and figure out what "design" should even mean at this company along the way.`,
+        heading: 'The old process, and the new one',
+        body: `The goal is not to argue that every designer should become an engineer. Instead, the goal is to challenge the idea that technical implementation belongs entirely outside the designer's scope.
+
+A modern product designer does not necessarily need to build production systems independently, but they should be capable of understanding how interfaces are constructed, how frontend constraints influence interaction design, how component systems behave, and how to test ideas closer to the final product.
+
+Basic HTML and CSS literacy, familiarity with browser development tools, understanding component-based architectures, working knowledge of React or similar frameworks, and the ability to use AI-assisted coding tools can significantly change the way a designer approaches a problem.
+
+The process therefore becomes less linear. Instead of Research \u2192 Wireframes \u2192 High-fidelity design \u2192 Handoff \u2192 Development \u2192 QA, the workflow begins to resemble Problem framing \u2192 Product and technical constraints \u2192 Rapid design exploration \u2192 Prototype or coded experiment \u2192 Stakeholder and engineering feedback \u2192 Iteration \u2192 Production implementation \u2192 Continuous refinement.
+
+The designer becomes less of a specification producer and more of an active participant in shaping the product as it is built.`,
       },
       {
-        heading: 'The bottleneck',
-        body: `The V1 numbers told the real story before any user did: 1,200 monthly users, $0 revenue. An early project retro put it bluntly \u2014 there was no clear value proposition and no research in place. I was also the only designer in the building, so every roadmap decision ran through one person. The most urgent early task wasn't fixing Pro directly, it was building a team that could.`,
+        heading: 'The tension',
+        body: `This shift creates organizational friction. Many design teams still operate around clearly defined professional boundaries. Activities such as inspecting frontend code, manipulating interfaces with browser tools, understanding component architecture, or discussing implementation details may be considered engineering responsibilities rather than design responsibilities.
+
+From that perspective, expanding the role can appear unnecessary or even threatening. Statements such as "that is not our job" are therefore not simply disagreements about tooling \u2014 they represent different interpretations of what the designer's responsibility should be.
+
+One philosophy treats design as a specialized discipline that should maintain clear boundaries around research, interaction design, visual design, and usability. The other treats product design as an increasingly interdisciplinary practice where understanding implementation is part of understanding the medium itself.
+
+This case study examines what happens when those two models collide.`,
       },
       {
-        heading: 'Hiring philosophy',
-        body: `Rather than hire for polish, I built a custom two-day exercise: re-ideate a weather app from scratch, live, under time pressure \u2014 a test of how someone thinks under ambiguity, not a portfolio review. Over nine months I grew the team from one to four: a designer to take over the companion apps, a research specialist who stood up two ongoing Discord research panels, and a third designer who owned the design system and a growing backlog of design debt.`,
+        heading: 'The experiment',
+        body: `Rather than debating the future of the design profession theoretically, the approach explored here is practical: deliberately work closer to implementation.
+
+That includes discussing technical constraints earlier in the design process; collaborating directly with engineers during exploration; using browser development tools to understand existing interfaces; developing basic HTML and CSS fluency; experimenting with React and React Native; building functional prototypes instead of relying exclusively on Figma; using AI coding tools to accelerate prototyping and implementation; testing interaction ideas directly in the environment where they will eventually live; and treating design systems as executable systems rather than static component libraries.
+
+The objective is not technical novelty. The objective is to determine whether this approach produces better product decisions and a more effective collaboration model.`,
       },
       {
-        heading: 'Turning research into a roadmap',
-        body: `We went back to the question V1 had skipped: who is this for, and why would they pay? That meant 30+ interviews, two focus groups, four surveys, and continuous analytics \u2014 plus direct validation at industry meteorology expos. That work surfaced Forecast Accuracy Tracking (FACT) as the real product wedge. A full redesign was estimated at six months of dev time, which wasn't viable, so we broke it into four shippable phases instead of one big bet.`,
+        heading: 'Questions to explore',
+        body: `Does technical literacy make a product designer better at design? Can understanding implementation constraints improve interaction decisions before engineering begins?
+
+Can coded prototypes replace part of the traditional handoff process? Instead of documenting every possible state, can designers communicate intent through functioning interfaces?
+
+Does working closer to engineering reduce iteration cycles? Can feasibility problems, edge cases, and system limitations be identified earlier?
+
+Where should the boundary between designer and engineer actually sit? How much technical knowledge creates meaningful leverage before the role effectively becomes frontend engineering?
+
+How does AI change the answer? If designers can produce functional prototypes and production-quality frontend code with AI assistance, does the traditional division of responsibilities still make sense?
+
+What happens when a team resists this model? How should a designer introduce new ways of working without turning technical curiosity into an implicit judgment of colleagues who prefer a more traditional practice?`,
       },
       {
-        heading: 'Results',
-        body: `The interim FACT release moved conversion from 0.1% to 2% within a month, with a 40% higher acceptance rate in post-mortem research. The full rollout took Pro from $0 to 5,000 unique users and $10,000 MRR, while the underlying station network scaled from roughly 2,000 to over 10,000 worldwide.`,
+        heading: 'What this is not',
+        body: `This is not an argument that Figma is obsolete, that designers should become software engineers, that traditional UX methods no longer matter, that AI eliminates the need for design expertise, or that every designer needs deep programming knowledge.
+
+Research, interaction design, visual judgment, accessibility, product thinking, and understanding human behavior remain fundamental. The argument is instead that the medium has evolved. Designing software while deliberately avoiding understanding how software is constructed increasingly limits the designer's ability to influence the final product.`,
       },
       {
-        heading: 'Reflection',
-        body: `The headline metric is the revenue jump, but the more durable outcome was structural: a product with no clear customer got one, and a team that could keep finding the next wedge without me being the single point of failure.`,
-      },
-    ],
-  },
-  {
-    id: 'etg-payments',
-    tag: '02 — ETG Group',
-    company: 'ETG Group',
-    role: 'UX Lead, Pre-Booking Experience',
-    title: 'Influence without authority',
-    hook: 'As the sole designer covering Payments and Fraud, I had no positional leverage to shape the roadmap \u2014 so I earned a seat at the table instead of waiting for one.',
-    chips: [{ before: 'no seat', after: 'trusted input' }],
-    sections: [
-      {
-        heading: 'Context',
-        body: `At ETG, I lead UX strategy across the flight booking funnel and mentor a group of designers. Within that, I'm the sole designer covering two of the highest-stakes, lowest-visibility surfaces in the product: Payments UX and an internal fraud detection system \u2014 surfaces that get treated as "solved" engineering problems until something breaks.`,
+        heading: 'The larger thesis',
+        body: `The role of the product designer is moving away from producing representations of software and toward participating more directly in the creation of software.
+
+The most valuable designers may increasingly become people who can move comfortably across the boundaries between user, product, design, technology, and implementation. They do not need to be the deepest specialist in every layer \u2014 they need enough understanding of each layer to make better decisions across the system.
+
+This creates an emerging professional space somewhere between Product Designer, UX Engineer, Design Engineer, and Product Engineer. The purpose of this case study is to explore that space through practice rather than prediction.`,
       },
       {
-        heading: 'The problem',
-        body: `Payments and fraud tooling don't come with a built-in seat at the table. Roadmap decisions here are made by engineering and risk stakeholders first, with UX brought in late if at all. Being the only designer meant no positional leverage to change that by fiat \u2014 I had to earn input by being right often enough, and early enough, that leaving design out of a conversation started to feel like a mistake.`,
-      },
-      {
-        heading: 'Approach',
-        body: `I treated every roadmap item as something to actively evaluate rather than passively design for \u2014 pushing back on feasibility assumptions before a spec was finalized, and building direct relationships with the engineering and risk stakeholders who actually owned these systems. Over time that shifted the pattern: instead of being handed a scoped ticket, I started getting looped into problem framing before a solution existed.`,
-      },
-      {
-        heading: 'Outcome',
-        body: `Two shipped products across the booking flow, part of a broader effort that contributed to a measurable lift in daily sales. The more transferable outcome: proof that design influence in a technically-owned, high-stakes surface doesn't require a title \u2014 it requires judgment stakeholders come to rely on.`,
-      },
-    ],
-  },
-  {
-    id: 'etg-ai-cost',
-    tag: '03 — ETG Group',
-    company: 'ETG Group',
-    role: 'UX Lead, Pre-Booking Experience',
-    title: 'Systems thinking, applied',
-    hook: `A company-wide AI tooling cost noticed from a design chair, prototyped as a working system, and rolled out to cut costs 60%.`,
-    chips: [{ before: 'cloud AI', after: '60% cheaper' }],
-    sections: [
-      {
-        heading: 'The observation',
-        body: `Working across design, research, and lightweight coding day to day, I noticed routine AI-assisted tasks were running almost entirely through paid cloud tools, on hardware that was mostly sitting idle outside those calls. It read less like a design problem than an infrastructure one \u2014 but it was costing the company real money.`,
-      },
-      {
-        heading: 'The proposal',
-        body: `I proposed and built a proof of concept for running local LLMs (12\u201332GB class) directly on the team's existing hardware, as a substitute for cloud AI tools on routine, non-critical tasks: everyday coding help, design ideation, first-pass research synthesis.`,
-      },
-      {
-        heading: 'Result',
-        body: `The proof of concept worked well enough to roll out company-wide, cutting AI tooling costs by 60%. It wasn't prompted by a brief or a stakeholder ask \u2014 it came from noticing a systemic inefficiency and following it through to a measurable, company-wide result.`,
-      },
-    ],
-  },
-  {
-    id: 'etg-ai-ambassador',
-    tag: '04 — ETG Group, current',
-    company: 'ETG Group',
-    role: 'Named AI Ambassador, UX team',
-    title: 'Scaling AI fluency across a team',
-    hook: 'From solving my own AI cost problem to being trusted to raise an entire team\u2019s ceiling \u2014 named AI Ambassador, mentoring on Figma agents and Claude Code, and now median prototyping time is down 75%.',
-    chips: [
-      { before: '8h', after: '2h prototyping' },
-      { before: 'file drift', after: '80% cleaner' },
-    ],
-    sections: [
-      {
-        heading: 'Context',
-        body: `The local LLM initiative solved a cost problem, but it also made me the person people came to when they wanted to know what AI could actually do for design work. That reputation turned into a formal mandate: I was named AI Ambassador for the UX team, with an open brief to raise the team's AI fluency, not just my own.`,
-      },
-      {
-        heading: 'The mandate',
-        body: `Being an ambassador rather than just an early adopter meant the job wasn't "use AI well," it was "make sure the team can." That split into three threads: evangelizing adoption, mentoring designers hands-on in building their own Figma agents and pairing Claude Code with Figma for prototyping, and making sure none of this came at the cost of design system integrity.`,
-      },
-      {
-        heading: 'What I built',
-        body: `I taught the team to combine Claude Code with Figma \u2014 using code generation to handle the mechanical parts of a prototype while Figma stayed the source of truth for design decisions. I also built AI-assisted checks that watch for design system changes and propagate awareness of them across the team's working files automatically, instead of relying on individual designers to notice drift.`,
-      },
-      {
-        heading: 'Results',
-        body: `Median prototyping time dropped from a full 8-hour workday to roughly 2 hours. The design-system sync work cut file inconsistency and clutter across the team's working files by 80%.`,
-      },
-      {
-        heading: 'Reflection',
-        body: `The local LLM story was about me solving a problem. This one is about turning that into something a team can rely on without me in the room \u2014 the same shift from individual contribution to force multiplication that defines the WeatherXM story, at a different scale.`,
+        heading: 'What a useful outcome looks like',
+        body: `The final conclusion does not need to prove that this model is universally better. A more useful outcome would be identifying where implementation-aware design creates measurable value; which technical skills provide the greatest leverage for designers; where deeper technical involvement becomes counterproductive; how AI changes the economics of prototyping and implementation; how teams can adopt this working model without creating unnecessary role conflict; and what the emerging UX Engineer / Design Engineer role may look like in practice.
+
+Ultimately, the question is not whether designers should learn to code. The more interesting question is: how close to the product itself should a designer be able to get before the distinction between designing software and building software stops being useful?`,
       },
     ],
   },

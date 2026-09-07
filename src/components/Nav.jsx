@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link } from '../router';
+
 export default function Nav() {
   return (
     <nav className="nav">
       <div className="wrap">
-        <span className="nav-mark">Aris Neos<span className="dot">.</span></span>
+        <Link to="/" className="nav-mark">Aris Neos<span className="dot">.</span></Link>
         <ul className="nav-links">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/work">Work</Link></li>
+          <li><Link to="/case-studies">Case Studies</Link></li>
+          <li><Link to="/#about">About</Link></li>
+          <li><Link to="/#experience">Experience</Link></li>
+          <li><Link to="/#prototypes">Prototypes</Link></li>
+          <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </div>
     </nav>

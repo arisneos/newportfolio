@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '../router';
 import DeltaChip from './DeltaChip';
 
 export default function Hero() {
@@ -22,8 +23,8 @@ export default function Hero() {
           <DeltaChip before="1" after="4 designers" />
         </div>
         <div className="hero-cta">
-          <a className="btn-primary" href="#work">See the work</a>
-          <a className="btn-ghost" href="#contact">Get in touch</a>
+          <Link className="btn-primary" to="/work">See the work</Link>
+          <Link className="btn-ghost" to="/#contact">Get in touch</Link>
         </div>
       </div>
     </header>
