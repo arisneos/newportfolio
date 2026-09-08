@@ -2,15 +2,16 @@ import React, { useEffect } from 'react';
 import { useLocation } from '../router';
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
-import ProofStrip from '../components/ProofStrip';
-import WorkTeaser from '../components/WorkTeaser';
+import WorkSection from '../components/WorkSection';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import PrototypeGate from '../components/PrototypeGate';
 import Footer from '../components/Footer';
+import useTransformHandoff from '../hooks/useTransformHandoff';
 
 export default function HomePage() {
   const location = useLocation();
+  const handoff = useTransformHandoff();
 
   // Client-side routing doesn't auto-scroll to a hash on navigation
   // the way a full page load does, so do it manually.
@@ -24,9 +25,14 @@ export default function HomePage() {
   return (
     <>
       <Nav />
-      <Hero />
-      <ProofStrip />
-      <WorkTeaser />
+      <Hero titleRef={handoff.heroTitleRef} fadeRef={handoff.heroFadeRef} wordRef={handoff.heroWordRef} />
+      <span className="scroll-word-clone" ref={handoff.cloneRef} aria-hidden="true">transformations</span>
+      <WorkSection
+        targetRef={handoff.workTargetRef}
+        restBeforeRef={handoff.workRestBeforeRef}
+        restAfterRef={handoff.workRestAfterRef}
+        revealRef={handoff.workRevealRef}
+      />
       <About />
       <Experience />
       <PrototypeGate />

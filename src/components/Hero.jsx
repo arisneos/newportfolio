@@ -1,31 +1,29 @@
 import React from 'react';
-import { Link } from '../router';
-import DeltaChip from './DeltaChip';
 
-export default function Hero() {
+// All scroll-driven state (fades, the pin-and-travel handoff) lives in
+// useTransformHandoff and is applied imperatively via these refs — see
+// HomePage.jsx for where it's wired up.
+export default function Hero({ titleRef, fadeRef, wordRef }) {
   return (
     <header className="hero">
       <div className="wrap">
-        <p className="hero-eyebrow">Design leader &middot; builds &amp; ships code</p>
-        <h1>
-          I turn stalled products<br />
-          and flat teams into <span className="accent">compounding ones.</span>
-        </h1>
-        <p className="hero-sub">
-          10+ years leading design across enterprise, e-commerce, and B2B SaaS.
-          I hire, mentor, and ship at the same time &mdash; and I'm hands-on enough
-          in code and AI tooling to change how a team works, not just what it makes.
+        <div className="hero-mark">
+          <span className="hero-mark-shape" aria-hidden="true" />
+          <span className="hero-mark-text">Aris Neos</span>
+          <span className="dot">.</span>
+        </div>
+        <p className="hero-statement" ref={titleRef}>
+          Design leader<span className="hero-statement-sep" aria-hidden="true" />
+          builds &amp; ships code
         </p>
-        <div className="hero-chips">
-          <DeltaChip before="$0" after="$10K MRR" />
-          <DeltaChip before="0.1%" after="2% conv." />
-          <DeltaChip before="8h" after="2h proto" />
-          <DeltaChip before="1" after="4 designers" />
-        </div>
-        <div className="hero-cta">
-          <Link className="btn-primary" to="/work">See the work</Link>
-          <Link className="btn-ghost" to="/#contact">Get in touch</Link>
-        </div>
+        <h1 className="hero-headline">
+          <span className="hero-fade" ref={fadeRef}>
+            I turn stalled products and flat teams into compounding
+          </span>{' '}
+          <span className="hero-anchor" ref={wordRef}>
+            transformations
+          </span>
+        </h1>
       </div>
     </header>
   );

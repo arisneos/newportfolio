@@ -3,8 +3,12 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer id="contact" className="footer">
+      <div className="accent-stripe" aria-hidden="true">
+        <span /><span /><span /><span />
+      </div>
       <div className="wrap footer-grid">
-        <div>
+        <div className="footer-lede">
+          <span className="footer-shape" aria-hidden="true" />
           <p className="section-eyebrow footer-eyebrow">Get in touch</p>
           <h2 className="footer-title">Let's build<br />something that compounds.</h2>
           <a className="btn-primary" href="mailto:arisneos@gmail.com">arisneos@gmail.com</a>

@@ -68,8 +68,39 @@ const caseStudies = [
     ],
   },
   {
+    // Grounded in the Experience timeline entry for this role (dates,
+    // studio, stack). STILL PLACEHOLDER where marked below — the actual
+    // level/systems work, and any concrete outcome, need your input.
+    id: 'genesis',
+    tag: '03 — Genesis Game Studios',
+    visual: 'levelpath',
+    company: 'Genesis Game Studios',
+    role: 'Experience Designer, Game Development (2012–2015)',
+    title: 'Where the UX instincts started',
+    hook: 'Long before "UX" was in my title, this Microsoft-incubated studio was the first time I designed for how a person actually moves through something — pacing, friction, and feedback loops, just for players instead of users.',
+    chips: [{ before: 'design', after: 'code hybrid' }],
+    sections: [
+      {
+        heading: 'Context',
+        body: `From 2012 to 2015 I worked as an Experience Designer at Genesis Game Studios, a Microsoft-incubated studio building games in C# and Unity.`,
+      },
+      {
+        heading: 'What I designed',
+        body: `Placeholder — the specific levels, systems, or scripting work you actually built there.`,
+      },
+      {
+        heading: 'The UX connection',
+        body: `This was the origin of the design-plus-code hybrid approach that still defines how I work: not handing off a spec and waiting, but staying close enough to the implementation to shape the experience directly.`,
+      },
+      {
+        heading: 'Results',
+        body: `Placeholder — any concrete outcome worth naming: a shipped title, player numbers, critical reception, or what you carried forward from it into product design.`,
+      },
+    ],
+  },
+  {
     id: 'etg-ai-cost',
-    tag: '03 — ETG Group',
+    tag: '04 — ETG Group',
     visual: 'costbars',
     company: 'ETG Group',
     role: 'UX Lead, Pre-Booking Experience',
@@ -93,7 +124,7 @@ const caseStudies = [
   },
   {
     id: 'etg-ai-ambassador',
-    tag: '04 — ETG Group, current',
+    tag: '05 — ETG Group, current',
     visual: 'cleanup',
     company: 'ETG Group',
     role: 'Named AI Ambassador, UX team',

@@ -5,7 +5,6 @@ export default function Experience() {
   return (
     <section id="experience" className="section experience">
       <div className="wrap">
-        <p className="section-eyebrow">Experience</p>
         <h2 className="section-title">Escalating leadership,<br />four companies.</h2>
         <div className="timeline">
           {experience.map((e) => (
