@@ -1,5 +1,4 @@
 // This is a SHA-256 hex hash of the gate password, NOT the password itself.
-// Default password below is "changeme" — replace before deploying.
 //
 // To set your own password, run from the project root:
 //   node scripts/hash-password.cjs "your-new-password"
@@ -11,6 +10,6 @@
 // matches. Anyone comfortable with browser dev tools can read it
 // regardless of the password. Fine for keeping the section off Google
 // and out of casual visitors' way; not fine for anything NDA-sensitive.
-const GATE_HASH = '057ba03d6c44104863dc7361fe4578965d1887360f90a0895882e58a6248fc86'; // "changeme"
+const GATE_HASH = 'c4f7cda8a146cf2da1ed14c47d6d3ca315d8267fd23b071249d0a125e903cc52'; // "figmaLinks2026"
 
 export default GATE_HASH;

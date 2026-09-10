@@ -1,7 +1,7 @@
 const caseStudies = [
   {
     id: 'weatherxm',
-    tag: '01 — Flagship',
+    tag: '01 — WeatherXM',
     visual: 'trajectory',
     company: 'WeatherXM',
     role: 'Head of Design (0\u21921 team building)',
@@ -78,7 +78,11 @@ const caseStudies = [
     role: 'Experience Designer, Game Development (2012–2015)',
     title: 'Where the UX instincts started',
     hook: 'Long before "UX" was in my title, this Microsoft-incubated studio was the first time I designed for how a person actually moves through something — pacing, friction, and feedback loops, just for players instead of users.',
-    chips: [{ before: 'design', after: 'code hybrid' }],
+    chips: [
+      { before: '2-person team', after: '1-month ship' },
+      { before: '0', after: '40K downloads' },
+    ],
+    externalLink: { label: 'Play the game', url: 'https://apps.microsoft.com/detail/9nblggh5x2kd' },
     sections: [
       {
         heading: 'Context',
@@ -86,7 +90,7 @@ const caseStudies = [
       },
       {
         heading: 'What I designed',
-        body: `Placeholder — the specific levels, systems, or scripting work you actually built there.`,
+        body: `I designed every level along with the game's pacing and difficulty curve, scripted its events, and coded the small timed scripts behind its visual effects and interactions. I also owned every UI element and everything story-side — level design, systems, and narrative all came out of the same seat.`,
       },
       {
         heading: 'The UX connection',
@@ -94,7 +98,7 @@ const caseStudies = [
       },
       {
         heading: 'Results',
-        body: `Placeholder — any concrete outcome worth naming: a shipped title, player numbers, critical reception, or what you carried forward from it into product design.`,
+        body: `We shipped with a two-person team in a single month. The game went on to reach roughly 40,000 downloads over the next five years, with reliable spikes in engagement every Halloween, before interest gradually tapered off.`,
       },
     ],
   },
@@ -124,7 +128,7 @@ const caseStudies = [
   },
   {
     id: 'etg-ai-ambassador',
-    tag: '05 — ETG Group, current',
+    tag: '05 — ETG Group',
     visual: 'cleanup',
     company: 'ETG Group',
     role: 'Named AI Ambassador, UX team',

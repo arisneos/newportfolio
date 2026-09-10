@@ -15,7 +15,7 @@ export default function Nav() {
           <li><Link to="/case-studies">Case Studies</Link></li>
           <li><Link to="/#about">About</Link></li>
           <li><Link to="/#experience">Experience</Link></li>
-          <li><Link to="/#prototypes">Prototypes</Link></li>
+          <li><Link to="/#figma">Figma</Link></li>
           <li><Link to="/#contact">Contact</Link></li>
         </ul>
       </div>

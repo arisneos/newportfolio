@@ -1,9 +1,9 @@
 const experience = [
   {
-    role: 'UX Lead, Pre-Booking Experience',
+    role: 'UX Lead, Payments & Fraud',
     company: 'ETG Group',
     dates: 'Aug 2025 \u2014 Present',
-    blurb: 'Owns Payments and Fraud UX as sole designer; named AI Ambassador for the UX team.',
+    blurb: 'Owns Payments and Fraud UX as sole designer; named AI Ambassador for the UX team. Leads the Pre-booking initiatives.',
   },
   {
     role: 'Head of Design (0\u21921 team building)',

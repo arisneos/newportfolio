@@ -27,17 +27,18 @@ export default function PrototypeGate() {
   }
 
   return (
-    <section id="prototypes" className="section prototypes">
+    <section id="figma" className="section prototypes">
       <div className="wrap">
-        <p className="section-eyebrow">Prototypes</p>
-        <h2 className="section-title">Figma prototype library</h2>
+        <p className="section-eyebrow">Figma</p>
+        <h2 className="section-title">Figma library</h2>
+        <p className="section-subtitle">
+          A curated list of projects that I led, contributed on and made
+          significant changes for. If you do not have access, you can ask me
+          directly!
+        </p>
 
         {!unlocked ? (
           <form className="gate-form" onSubmit={handleSubmit}>
-            <p className="gate-copy">
-              Working Figma prototypes for each case study live here. Ask me
-              directly if you'd like access.
-            </p>
             <div className="gate-row">
               <input
                 type="password"

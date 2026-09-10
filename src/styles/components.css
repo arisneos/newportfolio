@@ -129,6 +129,7 @@
 .nav-links a:hover::before { transform: scale(1); }
 
 .hero {
+  position: relative;
   background: var(--paper);
   color: var(--ink);
   min-height: 92vh;
@@ -136,6 +137,43 @@
   align-items: center;
   padding: 88px 0;
   overflow: hidden;
+}
+/* The "scroll for more" cue, pinned to the bottom of the hero — an
+   ordinary anchor to #figma, so it works with no JS and matches the
+   native smooth-scroll already set on html. */
+.hero-scroll-cue {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--paper-mid);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.hero-scroll-cue:hover { color: var(--signal); }
+.hero-scroll-chevrons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: hero-scroll-bob 1.8s ease-in-out infinite;
+}
+.hero-scroll-chevrons svg:last-child { margin-top: -6px; opacity: 0.5; }
+.hero-scroll-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+@keyframes hero-scroll-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-chevrons { animation: none; }
 }
 /* The huge brutalist statement that replaces the old small eyebrow —
    Archivo Black instead of the site's usual grotesk, because at this
@@ -466,6 +504,22 @@
   border-radius: 0;
   background: var(--paper);
 }
+.case-external-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--case-accent, var(--signal));
+  text-decoration: none;
+}
+.case-external-link:hover { text-decoration: underline; }
+.case-external-link span { display: inline-block; transition: transform 0.15s; }
+.case-external-link:hover span { transform: translateX(3px); }
 .case-toggle {
   display: flex;
   align-items: center;
@@ -706,6 +760,7 @@
 
 .prototypes { background: var(--ink); color: var(--paper); }
 .prototypes .section-title { color: var(--paper); }
+.prototypes .section-subtitle { color: var(--paper-on-ink); }
 .gate-form { max-width: 480px; }
 .gate-copy {
   font-size: 15px;
@@ -717,12 +772,17 @@
 .gate-row input {
   flex: 1;
   background: var(--ink-soft);
-  border: 1px solid rgba(168, 172, 184, 0.3);
-  border-radius: 8px;
+  border: 2px solid rgba(168, 172, 184, 0.3);
+  border-radius: 0;
   padding: 12px 16px;
   color: var(--paper);
   font-size: 15px;
   font-family: var(--font-body);
+  transition: border-color 0.15s;
+}
+.gate-row input:focus {
+  outline: none;
+  border-color: var(--signal);
 }
 .gate-row input::placeholder { color: var(--paper-on-ink); }
 .gate-error {

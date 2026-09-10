@@ -25,6 +25,17 @@ export default function Hero({ titleRef, fadeRef, wordRef }) {
           </span>
         </h1>
       </div>
+      <a href="#figma" className="hero-scroll-cue">
+        <span className="hero-scroll-chevrons" aria-hidden="true">
+          <svg viewBox="0 0 24 14" width="20" height="12">
+            <polyline points="1,1 12,10 23,1" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 14" width="20" height="12">
+            <polyline points="1,1 12,10 23,1" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+        <span className="hero-scroll-label">Skip to Figma links</span>
+      </a>
     </header>
   );
 }

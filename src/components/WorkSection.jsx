@@ -15,7 +15,7 @@ export default function WorkSection({ targetRef, restBeforeRef, restAfterRef, re
           <span className="work-rest" ref={restAfterRef}>,<br />one throughline.</span>
         </h2>
         <div className="work-reveal" ref={revealRef}>
-          <p className="section-subtitle placeholder-copy">Subtitle — placeholder, TBD.</p>
+          <p className="section-subtitle">Real before-and-after stories, each with a number attached.</p>
           <WorkGrid />
         </div>
       </div>

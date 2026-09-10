@@ -24,6 +24,16 @@ export default function WorkCard({ study, index }) {
               <DeltaChip key={i} before={c.before} after={c.after} />
             ))}
           </div>
+          {study.externalLink && (
+            <a
+              className="case-external-link"
+              href={study.externalLink.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {study.externalLink.label} <span aria-hidden="true">&rarr;</span>
+            </a>
+          )}
           <button className="case-toggle" onClick={() => setOpen(!open)}>
             {open ? 'Hide full story' : 'Read full story'}
             <span className="case-toggle-icon">{open ? '\u2212' : '+'}</span>

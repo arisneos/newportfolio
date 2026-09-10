@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section id="experience" className="section experience">
       <div className="wrap">
-        <h2 className="section-title">Escalating leadership,<br />four companies.</h2>
+        <h2 className="section-title">Escalating leadership<br />across companies.</h2>
         <div className="timeline">
           {experience.map((e) => (
             <div className="timeline-item" key={e.role + e.company}>
