@@ -2,3 +2,7 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# Raw source photo for the word-portrait — only the generated SVG
+# (src/assets/portrait-words.svg) is actually used by the site.
+src/assets/portrait-source.jpg

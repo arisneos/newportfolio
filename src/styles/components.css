@@ -137,6 +137,26 @@
   padding: 88px 0;
   overflow: hidden;
 }
+.hero-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+.hero-copy { flex: 1 1 auto; min-width: 0; }
+/* A word-portrait — the same photo, sampled for darkness and rebuilt out
+   of the actual expertise words from this site (see scripts/generate_portrait.py)
+   rather than a literal photograph, to stay in the brutalist/vector language
+   the rest of the page uses. */
+.hero-portrait {
+  flex: 0 0 auto;
+  width: clamp(220px, 26vw, 360px);
+}
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* The huge brutalist statement that replaces the old small eyebrow —
    Archivo Black instead of the site's usual grotesk, because at this
    size a merely-bold weight reads thin. Opacity/transform below are set
@@ -651,6 +671,9 @@
 
 @media (max-width: 860px) {
   .hero-headline { font-size: 24px; }
+  .hero-row { flex-direction: column-reverse; align-items: center; gap: 32px; }
+  .hero-portrait { width: min(60vw, 280px); }
+  .hero-copy { width: 100%; }
   .proof-grid { grid-template-columns: 1fr 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 8px; }
