@@ -53,7 +53,7 @@ export default function PrototypeGate() {
           </form>
         ) : (
           <ul className="gate-links">
-            {prototypeLinks.map((p) => (
+            {prototypeLinks.filter((p) => !p.hidden).map((p) => (
               <li key={p.id}>
                 <a href={p.url} target="_blank" rel="noreferrer">{p.label} &rarr;</a>
               </li>
