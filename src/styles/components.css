@@ -138,38 +138,6 @@
   padding: 88px 0;
   overflow: hidden;
 }
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 48px;
-}
-.hero-copy { min-width: 0; }
-.hero-portrait-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* The R3F canvas that decomposes the portrait into Bauhaus shapes on
-   hover and reassembles it when the pointer leaves — see
-   PortraitShatter.jsx. Fixed square footprint so the orthographic
-   camera's zoom (tuned in that file) keeps the grid filling the frame. */
-.portrait-shatter {
-  width: 420px;
-  height: 420px;
-}
-.portrait-shatter canvas {
-  display: block;
-  cursor: default;
-}
-@media (max-width: 1040px) {
-  .portrait-shatter { width: 320px; height: 320px; }
-}
-@media (max-width: 860px) {
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero-portrait-wrap { order: -1; margin-bottom: 8px; }
-  .portrait-shatter { width: 260px; height: 260px; }
-}
 /* The "scroll for more" cue, pinned to the bottom of the hero — an
    ordinary anchor to #figma, so it works with no JS and matches the
    native smooth-scroll already set on html. */
